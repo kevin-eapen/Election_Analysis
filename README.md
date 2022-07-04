@@ -21,18 +21,18 @@ The Colorado Board of Elections election commssion has requested an election aud
 
 - [Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.]
 - There are three counties in the precinct; Jefferson County, Denver County, and Arapahoe County. This is the breakdown of the number of votes and           percentage of total votes for each respective county.
-      - Jefferson: 38,855 votes, accounting for 10.5% of the total votes cast in the election.
-      - Denver: 306,055 votes, accounting for 82.8% of the total votes cast in the election.
-      - Arapahoe: 24,801, accounting for 6.7% of the total votes cast in the election.
+  - Jefferson: 38,855 votes, accounting for 10.5% of the total votes cast in the election.
+  - Denver: 306,055 votes, accounting for 82.8% of the total votes cast in the election.
+  - Arapahoe: 24,801, accounting for 6.7% of the total votes cast in the election.
 
 - Denver county had the largest voter turnout, with 306,855 votes cast.
 
 - [Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.]
 - There are three candidates, who received votes, running for the election; Charles Casper Stockham, Diana DeGette, and Raymon Anthony Doane. This is the     breakdown of the number of votes and percentage of total votes for each respective candidate.
       
-      - Charles Casper Stockham: 85,213 votes, accounting for 23.0% of the total votes cast in the election.
-      - Diana DeGette: 272,892 votes, accounting for 73.8% of the total votes cast in the election.
-      - Raymon Anthony Doane: 11,606, accounting for 3.1% of the total votes cast in the election.
+  - Charles Casper Stockham: 85,213 votes, accounting for 23.0% of the total votes cast in the election.
+  - Diana DeGette: 272,892 votes, accounting for 73.8% of the total votes cast in the election.
+  - Raymon Anthony Doane: 11,606, accounting for 3.1% of the total votes cast in the election.
 
 - Congressional election candidate, Diana DeGette, won the election by receiving the most votes among the candidates in the race. In the final results,       Diana DeGette received 272,892 votes, accounting for 73.8% of the total votes in the election.
 
