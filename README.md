@@ -21,7 +21,6 @@ The Colorado Board of Elections election commssion has requested an election aud
 
 - [Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.]
 - There are three counties in the precinct; Jefferson County, Denver County, and Arapahoe County. This is the breakdown of the number of votes and           percentage of total votes for each respective county.
-      
       - Jefferson: 38,855 votes, accounting for 10.5% of the total votes cast in the election.
       - Denver: 306,055 votes, accounting for 82.8% of the total votes cast in the election.
       - Arapahoe: 24,801, accounting for 6.7% of the total votes cast in the election.
