@@ -14,7 +14,7 @@ The Colorado Board of Elections election commssion has requested an election aud
 
 ## Resources
 - Data Source: election_results.csv
-- Software: Python: 3.8.9, Visual Studio Code, 1.68.1
+- Software: Python: 3.8.9, Visual Studio Code: 1.68.1
 
 ## Election Audit Results
 - There were 369,711 total votes cast in the congressional election.
