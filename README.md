@@ -31,7 +31,7 @@ The Colorado Board of Elections election commssion has requested an election aud
 
 - Denver county had the largest voter turnout, with 306,855 votes cast.
 
-    <img src="https://github.com/kevin-eapen/Election_Analysis/blob/main/Images/Largest_Turnout_County.png" width="400">
+    <img src="https://github.com/kevin-eapen/Election_Analysis/blob/main/Images/Largest_Turnout_County.png" width="420">
 
 - There are three candidates, who received votes, running for the election; Charles Casper Stockham, Diana DeGette, and Raymon Anthony Doane. This is the     breakdown of the number of votes and percentage of total votes for each respective candidate.
     
