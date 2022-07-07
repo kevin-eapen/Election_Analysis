@@ -51,7 +51,7 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
   - For this case we must modify the code in lines 145-148, as well as add a new conditional method to printing the election results depending on either a     numerical victory outcome or election tie outcome.
     - This could be accomplished by including an elif statment to the conditional in lines 145-148, and then another conditional statment under line 156         to decide which result to print. These modifications could be implemented in the code such as...
     
-      ```
+      ```python
       # First, intialize 3 new variables under line 30 of the script.
       tie_candidate_votes = 0
       tie_candidates = []
@@ -95,7 +95,7 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
   - For this case we must modify the code in lines 112-115, as well as add a new conditional method to printing the largest county turnout results             depending on either a numerical lead for one county or a tie in voter turnout.
     - This could be accomplished by including an elif statment to the conditional in lines 112-115, and then another conditional statment under line 122         to decide which result to print. These modifications could be implemented in the code such as...
       
-      ```
+      ```python
       # First, intialize 2 new variables under line 37 of the script.
       tie_turnout_votes = 0
       tie_turnout_counties = []
