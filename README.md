@@ -50,7 +50,7 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
 - Example 1: Tied Candidate Votes
   - For this case we must modify the code in lines 145-148, as well as add a new conditional method to printing the election results depending on either a     numerical victory outcome or election tie outcome.
     - This could be accomplished by including an elif statment to the conditional in lines 145-148, and then another conditional statment under line 156         to decide which result to print. These modifications could be implemented in the code such as...
-      
+      ```
       (First, intialize 3 new variables under line 30 of the script. variable #1: "tie_candidate_votes = 0", variable #2: "tie_candidates = []", and             variable #3: tie_percentage = 0
       (Next,under line 148)
       ...
@@ -76,6 +76,7 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
       else:
         print(winning_candidate_summary)
       ...
+      ```
 - Example 2: Tied County Voter Turnout
   - For this case we must modify the code in lines 112-115, as well as add a new conditional method to printing the largest county turnout results             depending on either a numerical lead for one county or a tie in voter turnout.
     - This could be accomplished by including an elif statment to the conditional in lines 112-115, and then another conditional statment under line 122         to decide which result to print. These modifications could be implemented in the code such as...
