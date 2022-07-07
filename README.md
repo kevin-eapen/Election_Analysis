@@ -46,4 +46,59 @@ The Colorado Board of Elections election commssion has requested an election aud
     <img src="https://github.com/kevin-eapen/Election_Analysis/blob/main/Images/Winner_Votes.png" width="400">
 
 ## Election Audit Summary
+It may prove helpful to the 'Colorado Board of Elections' election commission, that the logic used in this election audit analysis can be applied to run a similar audit analysis accross any election (given a dataset with like features as in the 'election_results.csv' resource). The code script may have to be minimally modified for the same program and underlying logic to work for a different election. Here are two examples of such cases:
+- Example 1: Tied Candidate Votes
+  - For this case we must modify the code in lines 145-148, as well as add a new conditional method to printing the election results depending on either a     numerical victory outcome or election tie outcome.
+    - This could be accomplished by including an elif statment to the conditional in lines 145-148, and then another conditional statment under line 156         to decide which result to print. These modifications could be implemented in the code such as...
+      
+      (First, intialize 3 new variables under line 30 of the script. variable #1: "tie_candidate_votes = 0", variable #2: "tie_candidates = []", and             variable #3: tie_percentage = 0
+      (Next,under line 148)
+      ...
+          elif votes == winning_count:
+              tie_candidate_votes = votes
+              tie_candidates.append(candidate_name)
+              tie_percentage = vote_percentage
+      (under line 156, and eventually move print statment on line 157 to following conditional)
+      (intialize variable for number of tied candidates. variable: n_candidate_ties = range(tie_candidates))
+      (add the conditional for which results to print and the code for what will be printed)
+      if tie_candidate_votes == winning_count:
+        print(
+        f"\n{'-'*25}\n"
+        f"The following canidates are tied for the election lead:\n"
+        )
+        for i in n_candidate_ties
+            print(f"{tie_candidates[i]}\n")
+        print(
+        f"Tie Vote Count: {tie_candidate_votes:,}\n"
+        f"Tie Precentage: {tie_percentage:.1}%\n" 
+        f"\n{'-'*25}\n"
+        )
+      else:
+        print(winning_candidate_summary)
+      ...
+- Example 2: Tied County Voter Turnout
+  - For this case we must modify the code in lines 112-115, as well as add a new conditional method to printing the largest county turnout results             depending on either a numerical lead for one county or a tie in voter turnout.
+      - This could be accomplished by including an elif statment to the conditional in lines 112-115, and then another conditional statment under line 122         to decide which result to print. These modifications could be implemented in the code such as...
+      
+      (First, intialize 2 new variables under line 37 of the script. variable #1: "tie_turnout_votes = 0" and variable #2: "tie_turnout_counties = []"
+      (Next,under line 115)
+      ...
+          elif county_total_votes == largest_turnout_votes:
+              tie_turnout_votes = county_total_votes
+              tie_turnout_counties.append(county_name)
+      (under line 122, and eventually move print statment on line 123 to following conditional)
+      (intialize variable for number of tied counties. variable: n_county_ties = range(tie_turnout_counties))
+      (add the conditional for which results to print and the code for what will be printed)
+      if largest_turnout_votes == tie_turnout_votes:
+        print(
+        f"\n{'-'*25}\n"
+        f"The following counties are tied for the largest voter turnout:\n"
+        )
+        for i in n_county_ties
+            print(f"{tie_turnout_counties[i]}\n")   
+        print(f"\n{'-'*25}\n")
+      else:
+        print(largest_turnout_result)
+      ...
 
+Essentially, the underlying logic for the election audit analysis program can be applied to future elections' analyses. However, edge cases (like the two examples above) must be considered, and necessary modifications to the existing script should be considered on a case-to-case basis.
