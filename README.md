@@ -18,7 +18,7 @@ The Colorado Board of Elections election commssion has requested an election aud
 
 ## Election Audit Results
 - There were 369,711 total votes cast in the congressional election.
-![alt text](https://github.com/kevin-eapen/Election_Analysis/blob/images/Total+Votes+Pic?raw=true)
+![alt text](https://github.com/kevin-eapen/Election_Analysis/images/Total+Votes+Pic?raw=true)
 
 - [Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.]
 - There are three counties in the precinct; Jefferson County, Denver County, and Arapahoe County. This is the breakdown of the number of votes and           percentage of total votes for each respective county.
