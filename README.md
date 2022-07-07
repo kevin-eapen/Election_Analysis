@@ -58,28 +58,36 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
       tie_percentage = 0
       # Next,under line 148
       ...
+      
           elif votes == winning_count:
               tie_candidate_votes = votes
               tie_candidates.append(candidate_name)
               tie_percentage = vote_percentage
+              
       # under line 156, and eventually move print statment on line 157 to following conditional.
+      
       # intialize variable for number list or range of tied candidates (to later iterate through tied candidate list index).
       n_candidate_ties = range(tie_candidates)
+      
       # add the conditional for which results to print and the code for what will be printed.
       if tie_candidate_votes == winning_count:
         print(
         f"\n{'-'*25}\n"
         f"The following canidates are tied for the election lead:\n"
         )
+        
         for i in n_candidate_ties
             print(f"{tie_candidates[i]}\n")
+            
         print(
         f"Tie Vote Count: {tie_candidate_votes:,}\n"
         f"Tie Precentage: {tie_percentage:.1}%\n" 
         f"\n{'-'*25}\n"
         )
+        
       else:
         print(winning_candidate_summary)
+        
       ...
       ```
       
@@ -93,23 +101,31 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
       tie_turnout_counties = []
       # Next, under line 115
       ...
+      
           elif county_total_votes == largest_turnout_votes:
               tie_turnout_votes = county_total_votes
               tie_turnout_counties.append(county_name)
+              
       # under line 122, and eventually move print statment on line 123 to following conditional
+      
       # intialize variable for number list or range of tied counties (to later iterate through tied counties list index).
       n_county_ties = range(tie_turnout_counties)
+      
       # add the conditional for which results to print and the code for what will be printed
       if largest_turnout_votes == tie_turnout_votes:
         print(
         f"\n{'-'*25}\n"
         f"The following counties are tied for the largest voter turnout:\n"
         )
+        
         for i in n_county_ties
-            print(f"{tie_turnout_counties[i]}\n")   
+            print(f"{tie_turnout_counties[i]}\n")
+            
         print(f"\n{'-'*25}\n")
+        
       else:
         print(largest_turnout_result)
+        
       ...
       ```
       
