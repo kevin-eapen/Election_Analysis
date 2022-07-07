@@ -39,7 +39,7 @@ The Colorado Board of Elections election commssion has requested an election aud
   - Diana DeGette: 272,892 votes, accounting for 73.8% of the total votes cast in the election.
   - Raymon Anthony Doane: 11,606, accounting for 3.1% of the total votes cast in the election.
 
-    <img src="https://github.com/kevin-eapen/Election_Analysis/blob/main/Images/Candidate_Votes.png" width="480">
+    <img src="https://github.com/kevin-eapen/Election_Analysis/blob/main/Images/Candidate_Votes.png" width="500">
 
 - Congressional election candidate, Diana DeGette, won the election by receiving the most votes among the candidates in the race. In the final results,       Diana DeGette received 272,892 votes, accounting for 73.8% of the total votes in the election.
 
