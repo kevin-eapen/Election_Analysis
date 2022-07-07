@@ -51,16 +51,20 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
   - For this case we must modify the code in lines 145-148, as well as add a new conditional method to printing the election results depending on either a     numerical victory outcome or election tie outcome.
     - This could be accomplished by including an elif statment to the conditional in lines 145-148, and then another conditional statment under line 156         to decide which result to print. These modifications could be implemented in the code such as...
       ```
-      (First, intialize 3 new variables under line 30 of the script. variable #1: "tie_candidate_votes = 0", variable #2: "tie_candidates = []", and             variable #3: tie_percentage = 0
-      (Next,under line 148)
+      # First, intialize 3 new variables under line 30 of the script.
+      tie_candidate_votes = 0
+      tie_candidates = []
+      tie_percentage = 0
+      # Next,under line 148
       ...
           elif votes == winning_count:
               tie_candidate_votes = votes
               tie_candidates.append(candidate_name)
               tie_percentage = vote_percentage
-      (under line 156, and eventually move print statment on line 157 to following conditional)
-      (intialize variable for number of tied candidates. variable: n_candidate_ties = range(tie_candidates))
-      (add the conditional for which results to print and the code for what will be printed)
+      # under line 156, and eventually move print statment on line 157 to following conditional.
+      # intialize variable for number list or range of tied candidates (to later iterate through tied candidate list index).
+      n_candidate_ties = range(tie_candidates)
+      # add the conditional for which results to print and the code for what will be printed.
       if tie_candidate_votes == winning_count:
         print(
         f"\n{'-'*25}\n"
@@ -80,16 +84,19 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
 - Example 2: Tied County Voter Turnout
   - For this case we must modify the code in lines 112-115, as well as add a new conditional method to printing the largest county turnout results             depending on either a numerical lead for one county or a tie in voter turnout.
     - This could be accomplished by including an elif statment to the conditional in lines 112-115, and then another conditional statment under line 122         to decide which result to print. These modifications could be implemented in the code such as...
-      
-      (First, intialize 2 new variables under line 37 of the script. variable #1: "tie_turnout_votes = 0" and variable #2: "tie_turnout_counties = []"
-      (Next,under line 115)
+      ```
+      # First, intialize 2 new variables under line 37 of the script.
+      tie_turnout_votes = 0
+      tie_turnout_counties = []
+      # Next, under line 115
       ...
           elif county_total_votes == largest_turnout_votes:
               tie_turnout_votes = county_total_votes
               tie_turnout_counties.append(county_name)
-      (under line 122, and eventually move print statment on line 123 to following conditional)
-      (intialize variable for number of tied counties. variable: n_county_ties = range(tie_turnout_counties))
-      (add the conditional for which results to print and the code for what will be printed)
+      # under line 122, and eventually move print statment on line 123 to following conditional
+      # intialize variable for number list or range of tied counties (to later iterate through tied counties list index).
+      n_county_ties = range(tie_turnout_counties)
+      # add the conditional for which results to print and the code for what will be printed
       if largest_turnout_votes == tie_turnout_votes:
         print(
         f"\n{'-'*25}\n"
@@ -101,5 +108,5 @@ It may prove helpful to the 'Colorado Board of Elections' election commission, t
       else:
         print(largest_turnout_result)
       ...
-
+      ```
 Essentially, the underlying logic for the election audit analysis program can be applied to future elections' analyses. However, edge cases (like the two examples above) must be considered, and necessary modifications to the existing script should be considered on a case-to-case basis.
